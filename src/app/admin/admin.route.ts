@@ -20,12 +20,14 @@ const appRoutes: Routes = [
                 path: 'edit-kitchen',
                 component: EditKitchenComponent,
                 children:[
+                    { path:'edit',component:EditKitchenComponent },
                     { path:'add-gallery-image',component:AddGalleryImageComponent},
                     { path:'add-event',component:AddEventComponent},
-                    { path:'add-post',component:AddPostComponent}
+                    { path:'add-post',component:AddPostComponent},
+                    { path:'',redirectTo:'add-post',pathMatch:'full'}
                 ]
             },
-            { path:'',redirectTo: 'edit-kitchen/add-gallery-image', pathMatch:'full'},
+            { path:'',redirectTo: 'home', pathMatch:'full'},
             { path: '**', component: ErrorComponent }
       ]
   },
