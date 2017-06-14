@@ -1,0 +1,13 @@
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.menu-list a{
+    color: #000;
+    padding: 16px;
+    margin: 4px;
+    background: #b9b9b9;
+    text-align: center;
+
+}

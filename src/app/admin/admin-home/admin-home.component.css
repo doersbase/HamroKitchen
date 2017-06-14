@@ -1,0 +1,18 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.menu div{
+  padding: 40px 50px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    background: #f1f1f1;
+    margin: 20px 30px;
+    flex-basis: 20%;
+}
+.padding{
+    padding:15px;
+}
